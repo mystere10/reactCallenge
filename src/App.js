@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserProfiles from './UserProfiles';
 import './App.css';
 import logo from './logo.svg';
 
@@ -98,6 +99,7 @@ const movies = {
 };
 
 class App extends Component {
+  
   render() {
     return (
       <div>
@@ -106,6 +108,7 @@ class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
+		<UserProfiles profiles={profiles} users={users} movies={movies}/>
       </div>
     );
   }
